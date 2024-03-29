@@ -43,7 +43,7 @@ public class RegisterServlet extends HttpServlet {
 
     @Override
     public void destroy(){
-        System.out.println("4");
+
     }
 
 }
