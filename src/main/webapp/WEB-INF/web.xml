@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
 
-    <servlet>
+    <!--<servlet>
         <servlet-name>WangCongYu</servlet-name>
         <servlet-class>week2.work.HelloServlet</servlet-class>
     </servlet>
@@ -22,7 +22,74 @@
     <servlet-mapping>
         <servlet-name>WangCongYu</servlet-name>
         <url-pattern>/register</url-pattern>
-    </servlet-mapping>
+    </servlet-mapping>-->
 
+    <!--//week2.week3-->
+
+
+
+
+
+
+
+
+
+    <!--<servlet>
+        <servlet-name>WangCongYu</servlet-name>
+        <servlet-class>weeek4.ConfigServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>WangCongYu</servlet-name>
+        <url-pattern>/config</url-pattern>
+    </servlet-mapping>-->
+
+    <servlet>
+        <servlet-name>JDBCServlet</servlet-name>
+        <servlet-class>week4.JDBCServlet</servlet-class>
+        <!--<load-on-startup>1</load-on-startup>-->
+    <!--</servlet>-->
+        
+    
+    <init-param>
+        <param-name>driver</param-name>
+        <param-value>com.microsoft.sqlserver.jdbc.SQLServerDriver</param-value>
+    </init-param>
+    
+    <init-param>
+        <param-name>url</param-name>
+        <param-value>jdbc:sqlserver://localhost;databaseName=userdb;</param-value>
+    </init-param>
+    
+    <init-param>
+        <param-name>username</param-name>
+        <param-value>sa</param-value>
+    </init-param>
+    
+    <init-param>
+        <param-name>password</param-name>
+        <param-value>12345678</param-value>
+    </init-param>
+
+
+    <load-on-startup>1</load-on-startup>
+
+</servlet>
+
+    <context-param>
+        <param-name>name</param-name>
+        <param-value>WangCongYu</param-value>
+    </context-param>
+    <context-param>
+        <param-name>id</param-name>
+        <param-value>2022211001000515</param-value>
+    </context-param>
+
+
+
+<servlet-mapping>
+    <servlet-name>JDBCServlet</servlet-name>
+    <url-pattern>/jdbc</url-pattern>
+</servlet-mapping>
 
 </web-app>

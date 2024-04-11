@@ -9,20 +9,15 @@
 <html>
 <head>
     <title>Register</title>
-</head>
 <body>
-
+<p>New Uers Registration!</p>
+<form>
+    <input type = "text" name="Username"  placeholder="Username"><br>
+    <input type="text"name="password" placeholder="password" maxlength="8"><br>
+    <input type="text" name="Email" placeholder="Email"><br>
+    Gender <input type="radio" name="sex" value="boy">Male <input type="radio" value="girl" name="sex">Female<br>
+    <input type="text" name="birthday" placeholder="birthday"><br>
+    <input type="submit" value="Register">
+</form>
 </body>
-    <from>
-        Username :<input type="text" name="name"><br/>
-        Password :<input type="text" name="id"><br/>
-        Email :<input type="text" name="id"><br/>
-        <label>性别:</label>
-        <input type="radio" name="gender" value="male">男
-        <input type="radio" name="gender" value="female">女
-
-        <input type="submit" value="Register"><br/>
-        <a href="https://github.com">go to GitHub</a>
-
-    </from>
 </html>
