@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
 
-    <!--<servlet>
+    <servlet>
         <servlet-name>WangCongYu</servlet-name>
         <servlet-class>week2.work.HelloServlet</servlet-class>
     </servlet>
@@ -22,9 +22,29 @@
     <servlet-mapping>
         <servlet-name>WangCongYu</servlet-name>
         <url-pattern>/register</url-pattern>
-    </servlet-mapping>-->
+    </servlet-mapping>
 
-    <!--//week2.week3-->
+    //week2.week3
+
+    <servlet>
+        <servlet-name>WangCongYu</servlet-name>
+        <servlet-class>week6.JDBCServletContextListener</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>WangCongYu</servlet-name>
+        <url-pattern>/search</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>WangCongYu</servlet-name>
+        <servlet-class>week6.SearchServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>WangCongYu</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
 
 
 
@@ -34,7 +54,7 @@
 
 
 
-    <!--<servlet>
+    <servlet>
         <servlet-name>WangCongYu</servlet-name>
         <servlet-class>weeek4.ConfigServlet</servlet-class>
     </servlet>
@@ -42,7 +62,7 @@
     <servlet-mapping>
         <servlet-name>WangCongYu</servlet-name>
         <url-pattern>/config</url-pattern>
-    </servlet-mapping>-->
+    </servlet-mapping>
 
     <servlet>
         <servlet-name>JDBCServlet</servlet-name>
